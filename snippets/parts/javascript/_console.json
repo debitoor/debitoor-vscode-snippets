@@ -1,0 +1,12 @@
+{
+    "console-log": {
+        "prefix": "clog",
+        "description": "Scaffold console.log command",
+        "body": ["console.log('###$1', $2)"]
+    },
+    "console-warn": {
+        "prefix": "cwarn",
+        "description": "Scaffold console.warn command",
+        "body": ["console.warn('### $1', $2)"]
+    }
+}

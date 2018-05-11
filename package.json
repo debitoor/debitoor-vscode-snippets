@@ -1,0 +1,24 @@
+{
+    "name": "@debitoor/vscode-snippets-mobile",
+    "displayName": "@debitoor/vscode-snippets-mobile",
+    "description": "Code snippets for Debitoor mobile team",
+    "version": "0.0.1",
+    "publisher": "Carsten Daurehøj <cd@debitoor.com>",
+    "scripts": {
+        "generate-js": "node ./scripts/merge.js js"
+    },
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            }
+        ]
+    }
+}
