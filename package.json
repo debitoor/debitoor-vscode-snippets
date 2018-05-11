@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "publisher": "Carsten Daurehøj <cd@debitoor.com>",
     "scripts": {
-        "generate-js": "node ./scripts/merge javascript",
+        "generate-js": "node ./scripts/merge javascript"
     },
     "engines": {
         "vscode": "^1.23.0"
