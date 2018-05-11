@@ -1,11 +1,11 @@
 {
-    "name": "@debitoor/vscode-snippets-mobile",
-    "displayName": "@debitoor/vscode-snippets-mobile",
-    "description": "Code snippets for Debitoor mobile team",
+    "name": "@debitoor/vscode-snippets",
+    "displayName": "@debitoor/vscode-snippets",
+    "description": "Code snippets for Debitoor",
     "version": "0.0.1",
     "publisher": "Carsten Daurehøj <cd@debitoor.com>",
     "scripts": {
-        "generate-js": "node ./scripts/merge.js js"
+        "generate-js": "node ./scripts/merge javascript",
     },
     "engines": {
         "vscode": "^1.23.0"

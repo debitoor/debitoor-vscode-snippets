@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path')
 
 
-const FOLDER = path.join(__dirname, '../snippets/parts/' + args + '/')
+const FOLDER = path.join(__dirname, '../parts/' + args + '/')
 let finalContent = ''
 const finalPath = 'snippets/' + args + '.json'
 
