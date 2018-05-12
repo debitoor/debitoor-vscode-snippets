@@ -17,5 +17,12 @@
             "}",
             "}"
         ]
+    },
+    "rn-stylesheet": {
+        "prefix": "rn-stylesheet",
+        "description": "Scaffold a StyleSheet for React native",
+        "body": [
+            "const styles = StyleSheet.create({})"
+        ] 
     }
 }

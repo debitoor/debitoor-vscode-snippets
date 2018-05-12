@@ -1,9 +1,18 @@
 {
-    "name": "@debitoor/vscode-snippets",
+    "name": "debitoor-vscode-snippets",
     "displayName": "@debitoor/vscode-snippets",
-    "description": "Code snippets for Debitoor",
+    "description": "Code snippets by the Debitoor team",
     "version": "0.0.1",
-    "publisher": "Carsten Daurehøj <cd@debitoor.com>",
+    "publisher": "Debitoor",
+    "author": {
+        "name": "Carsten Daurehøj",
+        "email": "cd@debitoor.com"
+    },
+    "keywords": [
+        "code snippets",
+        "snippets",
+        "debitoor"
+    ],
     "scripts": {
         "generate-js": "node ./scripts/merge javascript"
     },
@@ -13,6 +22,11 @@
     "categories": [
         "Snippets"
     ],
+    "icon": "images/debitoor-logo.png",
+    "galleryBanner": {
+        "color": "#44A6FF",
+        "theme": "light"
+    },
     "contributes": {
         "snippets": [
             {
@@ -20,5 +34,6 @@
                 "path": "./snippets/javascript.json"
             }
         ]
-    }
+    },
+    "dependencies": {}
 }
