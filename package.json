@@ -1,6 +1,6 @@
 {
     "name": "debitoor-vscode-snippets",
-    "displayName": "@debitoor/vscode-snippets",
+    "displayName": "debitoor-vscode-snippets",
     "description": "Code snippets by the Debitoor team",
     "version": "0.0.1",
     "publisher": "Debitoor",
@@ -13,8 +13,14 @@
         "snippets",
         "debitoor"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/debitoor/debitoor-vscode-snippets"
+    },
     "scripts": {
-        "generate-js": "node ./scripts/merge javascript"
+        "generate-js": "node ./scripts/merge javascript",
+        "build": "node ./node_modules/.bin/vsce package",
+        "publish": "node ./node_modules/.bin/vsce publish"
     },
     "engines": {
         "vscode": "^1.23.0"
@@ -28,12 +34,17 @@
         "theme": "light"
     },
     "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript.json"
-            }
-        ]
+        "commands": [{
+            "command": "",
+            "title": "Install Debitoor snippets",
+            "category": "Install"
+        }],
+        "snippets": [{
+            "language": "javascript",
+            "path": "./snippets/javascript.json"
+        }]
     },
-    "dependencies": {}
+    "dependencies": {
+        "vsce": "^1.40.0"
+    }
 }
