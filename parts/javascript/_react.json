@@ -24,5 +24,12 @@
         "body": [
             "const styles = StyleSheet.create({})"
         ] 
+    },
+    "import-rn": {
+        "prefix": "import-rn",
+        "description": "Imports react-native into your file",
+        "body": [
+            "import {$1} from 'react-native"
+        ] 
     }
 }

@@ -18,9 +18,8 @@
         "url": "https://github.com/debitoor/debitoor-vscode-snippets"
     },
     "scripts": {
-        "generate-js": "node ./scripts/merge javascript",
-        "build": "node ./node_modules/.bin/vsce package",
-        "publish": "node ./node_modules/.bin/vsce publish"
+        "merge": "node ./scripts/merge",
+        "build": "node ./node_modules/.bin/vsce package"
     },
     "engines": {
         "vscode": "^1.23.0"
