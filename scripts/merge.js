@@ -14,7 +14,7 @@ if (!args) {
 try {
     fs.readdirSync(FOLDER).forEach(file => {
         if (file.startsWith('_') && file.endsWith('.json')) {
-            const content = fs.readFileSync(FOLDER + file, "utf8")
+            const content = fs.readFileSync(path.join(FOLDER, file), "utf8")
 
             if (!validateJSON(content)) {
                 return console.warn(`JSON is not valid for file: ${file}`);
