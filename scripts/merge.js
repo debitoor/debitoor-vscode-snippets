@@ -4,9 +4,9 @@ const fs = require('fs');
 const path = require('path')
 
 
-const FOLDER = path.join(__dirname, '../parts/' + args + '/')
-let finalContent = ''
-const finalPath = 'snippets/' + args + '.json'
+const FOLDER = path.join(__dirname, `../parts/${args}`);
+let finalContent = '';
+const finalPath = `snippets/${args}.json`;
 
 if (!args) {
     return console.warn('No arguments provided')
@@ -14,10 +14,10 @@ if (!args) {
 try {
     fs.readdirSync(FOLDER).forEach(file => {
         if (file.startsWith('_') && file.endsWith('.json')) {
-            const content = fs.readFileSync(FOLDER + file, "utf8")
+            const content = fs.readFileSync(path.join(FOLDER, file), "utf8")
 
             if (!validateJSON(content)) {
-                return console.warn('JSON is not valid for file: ' + file);
+                return console.warn(`JSON is not valid for file: ${file}`);
             }
 
             finalContent = finalContent + content.substr(1).slice(0, -1) + ','
@@ -42,15 +42,15 @@ if (validateJSON(result)) {
         return e
     }
 
-    return console.log(finalPath + ' was created')
+    return console.log(`${finalPath} was created`);
 
 }
 
 function validateJSON(json) {
     try {
-        JSON.parse(json)
+        JSON.parse(json);
+        return true;
     } catch (e) {
         return false
     }
-    return true;
 }
